@@ -12,8 +12,25 @@ import Foundation
 public struct Fluky {
 
     // MARK: Public Static Functions
-    public static func view(with type: FlukyType, images: [UIImage]) -> FlukyView {
+    public static func view(with type: FlukyType,
+                            images: [UIImage],
+                            backgroundColor: UIColor,
+                            size: CGFloat = 50.0) -> FlukyView {
 
-        return FlukyLinearView(images: images)
+        let view: FlukyView
+
+        switch type {
+
+        case .linear:
+            view = FlukyLinearView(images: images, size: size)
+
+
+        case .box:
+            view = FlukyLinearView(images: images, size: size) // TODO
+        }
+
+        view.backgroundColor = backgroundColor
+
+        return view
     }
 }

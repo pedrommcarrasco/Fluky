@@ -16,6 +16,14 @@
 		536CFAF9217DF9CC000DDEAA /* UIImageView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAF8217DF9CC000DDEAA /* UIImageView+Configuration.swift */; };
 		536CFAFB217DFAF9000DDEAA /* FlukyView+ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAFA217DFAF9000DDEAA /* FlukyView+ImageView.swift */; };
 		536CFAFD217DFBE9000DDEAA /* Sequence+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */; };
+		536CFAFF217E32A4000DDEAA /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAFE217E32A4000DDEAA /* Anchor.swift */; };
+		536CFB01217E3336000DDEAA /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB00217E3336000DDEAA /* UIView+Add.swift */; };
+		536CFB03217E334B000DDEAA /* UIStackView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB02217E334B000DDEAA /* UIStackView+Add.swift */; };
+		536CFB05217E352E000DDEAA /* NSObject+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB04217E352E000DDEAA /* NSObject+Create.swift */; };
+		536CFB0B217E35BE000DDEAA /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB07217E35BE000DDEAA /* Duration.swift */; };
+		536CFB0C217E35BE000DDEAA /* Damping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB08217E35BE000DDEAA /* Damping.swift */; };
+		536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB09217E35BE000DDEAA /* Spacing.swift */; };
+		536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB0A217E35BE000DDEAA /* Spring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		536CFAF8217DF9CC000DDEAA /* UIImageView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Configuration.swift"; sourceTree = "<group>"; };
 		536CFAFA217DFAF9000DDEAA /* FlukyView+ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyView+ImageView.swift"; sourceTree = "<group>"; };
 		536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Transform.swift"; sourceTree = "<group>"; };
+		536CFAFE217E32A4000DDEAA /* Anchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
+		536CFB00217E3336000DDEAA /* UIView+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
+		536CFB02217E334B000DDEAA /* UIStackView+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Add.swift"; sourceTree = "<group>"; };
+		536CFB04217E352E000DDEAA /* NSObject+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Create.swift"; sourceTree = "<group>"; };
+		536CFB07217E35BE000DDEAA /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		536CFB08217E35BE000DDEAA /* Damping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Damping.swift; sourceTree = "<group>"; };
+		536CFB09217E35BE000DDEAA /* Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		536CFB0A217E35BE000DDEAA /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,11 @@
 		536CFADF217DF538000DDEAA /* Fluky */ = {
 			isa = PBXGroup;
 			children = (
+				536CFB06217E35A7000DDEAA /* Style */,
+				536CFB08217E35BE000DDEAA /* Damping.swift */,
+				536CFB07217E35BE000DDEAA /* Duration.swift */,
+				536CFB09217E35BE000DDEAA /* Spacing.swift */,
+				536CFB0A217E35BE000DDEAA /* Spring.swift */,
 				536CFAF7217DF9AA000DDEAA /* Extensions */,
 				536CFAF4217DF869000DDEAA /* Views */,
 				536CFAF1217DF7B1000DDEAA /* Typealias */,
@@ -117,11 +138,22 @@
 		536CFAF7217DF9AA000DDEAA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				536CFAFE217E32A4000DDEAA /* Anchor.swift */,
+				536CFB04217E352E000DDEAA /* NSObject+Create.swift */,
 				536CFAF8217DF9CC000DDEAA /* UIImageView+Configuration.swift */,
 				536CFAFA217DFAF9000DDEAA /* FlukyView+ImageView.swift */,
 				536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */,
+				536CFB00217E3336000DDEAA /* UIView+Add.swift */,
+				536CFB02217E334B000DDEAA /* UIStackView+Add.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		536CFB06217E35A7000DDEAA /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,14 +235,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536CFB03217E334B000DDEAA /* UIStackView+Add.swift in Sources */,
 				536CFAEA217DF704000DDEAA /* FlukyProtocol.swift in Sources */,
+				536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */,
+				536CFB0C217E35BE000DDEAA /* Damping.swift in Sources */,
 				536CFAF6217DF875000DDEAA /* FlukyLinearView.swift in Sources */,
 				536CFAF3217DF7BA000DDEAA /* FlukyView.swift in Sources */,
+				536CFB0B217E35BE000DDEAA /* Duration.swift in Sources */,
 				536CFAFD217DFBE9000DDEAA /* Sequence+Transform.swift in Sources */,
+				536CFB01217E3336000DDEAA /* UIView+Add.swift in Sources */,
 				536CFAF9217DF9CC000DDEAA /* UIImageView+Configuration.swift in Sources */,
+				536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */,
 				536CFAFB217DFAF9000DDEAA /* FlukyView+ImageView.swift in Sources */,
 				536CFAED217DF73A000DDEAA /* FlukyType.swift in Sources */,
+				536CFAFF217E32A4000DDEAA /* Anchor.swift in Sources */,
 				536CFAF0217DF79C000DDEAA /* Fluky.swift in Sources */,
+				536CFB05217E352E000DDEAA /* NSObject+Create.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

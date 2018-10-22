@@ -13,4 +13,8 @@ public protocol FlukyProtocol {
 
     // MARK: Typealias
     typealias Static = Self
+
+    // MARK: Functions - Animation Interface
+    func start()
+    func stop()
 }
