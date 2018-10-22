@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		536CFAE2217DF538000DDEAA /* Fluky.h in Headers */ = {isa = PBXBuildFile; fileRef = 536CFAE0217DF538000DDEAA /* Fluky.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		536CFAEA217DF704000DDEAA /* FlukyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAE9217DF704000DDEAA /* FlukyProtocol.swift */; };
+		536CFAED217DF73A000DDEAA /* FlukyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAEC217DF73A000DDEAA /* FlukyType.swift */; };
+		536CFAF0217DF79C000DDEAA /* Fluky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAEF217DF79C000DDEAA /* Fluky.swift */; };
+		536CFAF3217DF7BA000DDEAA /* FlukyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAF2217DF7BA000DDEAA /* FlukyView.swift */; };
+		536CFAF6217DF875000DDEAA /* FlukyLinearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAF5217DF875000DDEAA /* FlukyLinearView.swift */; };
+		536CFAF9217DF9CC000DDEAA /* UIImageView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAF8217DF9CC000DDEAA /* UIImageView+Configuration.swift */; };
+		536CFAFB217DFAF9000DDEAA /* FlukyView+ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAFA217DFAF9000DDEAA /* FlukyView+ImageView.swift */; };
+		536CFAFD217DFBE9000DDEAA /* Sequence+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		536CFADD217DF538000DDEAA /* Fluky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fluky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		536CFAE0217DF538000DDEAA /* Fluky.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fluky.h; sourceTree = "<group>"; };
 		536CFAE1217DF538000DDEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536CFAE9217DF704000DDEAA /* FlukyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyProtocol.swift; sourceTree = "<group>"; };
+		536CFAEC217DF73A000DDEAA /* FlukyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyType.swift; sourceTree = "<group>"; };
+		536CFAEF217DF79C000DDEAA /* Fluky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fluky.swift; sourceTree = "<group>"; };
+		536CFAF2217DF7BA000DDEAA /* FlukyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyView.swift; sourceTree = "<group>"; };
+		536CFAF5217DF875000DDEAA /* FlukyLinearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyLinearView.swift; sourceTree = "<group>"; };
+		536CFAF8217DF9CC000DDEAA /* UIImageView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Configuration.swift"; sourceTree = "<group>"; };
+		536CFAFA217DFAF9000DDEAA /* FlukyView+ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyView+ImageView.swift"; sourceTree = "<group>"; };
+		536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Transform.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +62,66 @@
 		536CFADF217DF538000DDEAA /* Fluky */ = {
 			isa = PBXGroup;
 			children = (
+				536CFAF7217DF9AA000DDEAA /* Extensions */,
+				536CFAF4217DF869000DDEAA /* Views */,
+				536CFAF1217DF7B1000DDEAA /* Typealias */,
+				536CFAEE217DF792000DDEAA /* Factory */,
+				536CFAEB217DF72E000DDEAA /* Enumerations */,
+				536CFAE8217DF6E4000DDEAA /* Protocols */,
 				536CFAE0217DF538000DDEAA /* Fluky.h */,
 				536CFAE1217DF538000DDEAA /* Info.plist */,
 			);
 			path = Fluky;
+			sourceTree = "<group>";
+		};
+		536CFAE8217DF6E4000DDEAA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				536CFAE9217DF704000DDEAA /* FlukyProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		536CFAEB217DF72E000DDEAA /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				536CFAEC217DF73A000DDEAA /* FlukyType.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		536CFAEE217DF792000DDEAA /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				536CFAEF217DF79C000DDEAA /* Fluky.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		536CFAF1217DF7B1000DDEAA /* Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				536CFAF2217DF7BA000DDEAA /* FlukyView.swift */,
+			);
+			path = Typealias;
+			sourceTree = "<group>";
+		};
+		536CFAF4217DF869000DDEAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				536CFAF5217DF875000DDEAA /* FlukyLinearView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		536CFAF7217DF9AA000DDEAA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				536CFAF8217DF9CC000DDEAA /* UIImageView+Configuration.swift */,
+				536CFAFA217DFAF9000DDEAA /* FlukyView+ImageView.swift */,
+				536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +167,7 @@
 				TargetAttributes = {
 					536CFADC217DF538000DDEAA = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				536CFAEA217DF704000DDEAA /* FlukyProtocol.swift in Sources */,
+				536CFAF6217DF875000DDEAA /* FlukyLinearView.swift in Sources */,
+				536CFAF3217DF7BA000DDEAA /* FlukyView.swift in Sources */,
+				536CFAFD217DFBE9000DDEAA /* Sequence+Transform.swift in Sources */,
+				536CFAF9217DF9CC000DDEAA /* UIImageView+Configuration.swift in Sources */,
+				536CFAFB217DFAF9000DDEAA /* FlukyView+ImageView.swift in Sources */,
+				536CFAED217DF73A000DDEAA /* FlukyType.swift in Sources */,
+				536CFAF0217DF79C000DDEAA /* Fluky.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +342,7 @@
 		536CFAE6217DF538000DDEAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pedrommcarrasco.Fluky;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +368,7 @@
 		536CFAE7217DF538000DDEAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
