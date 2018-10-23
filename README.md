@@ -30,11 +30,11 @@ After installing Fluky, you should start by importing the framework:
 import Fluky
 ```
 
-Once imported you can start using Fluky to create randomized icon based loading sceens. Bellow, you'll be able to see a working example. First, we start by creating a `FlukyView`:
+Once imported, you can start using Fluky to create randomized icon based loading sceens. Bellow, you'll be able to see a working example. First, we start by creating a `FlukyView`:
 
 ```swift
 let flukyView = Fluky.view(as: .single, with: images) 
-// size as a default parameter of 30.0
+// size has a default parameter of 30.0
 ```
 
 Once you apply your constraints, to start animating you just need to do:
