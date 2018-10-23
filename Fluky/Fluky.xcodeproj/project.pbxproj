@@ -24,8 +24,10 @@
 		536CFB0C217E35BE000DDEAA /* Damping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB08217E35BE000DDEAA /* Damping.swift */; };
 		536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB09217E35BE000DDEAA /* Spacing.swift */; };
 		536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB0A217E35BE000DDEAA /* Spring.swift */; };
+		53B3E2A1217F692E0084C1FA /* FlukyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3E2A0217F692E0084C1FA /* FlukyBoxView.swift */; };
 		53FEF5C2217F199200188E9C /* FlukySingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C1217F199200188E9C /* FlukySingleView.swift */; };
 		53FEF5C4217F2FDC00188E9C /* FlukyProtocol+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C3217F2FDC00188E9C /* FlukyProtocol+Animation.swift */; };
+		53FEF5C9217F502800188E9C /* FlukyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C8217F502800188E9C /* FlukyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +50,10 @@
 		536CFB08217E35BE000DDEAA /* Damping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Damping.swift; sourceTree = "<group>"; };
 		536CFB09217E35BE000DDEAA /* Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		536CFB0A217E35BE000DDEAA /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		53B3E2A0217F692E0084C1FA /* FlukyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyBoxView.swift; sourceTree = "<group>"; };
 		53FEF5C1217F199200188E9C /* FlukySingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukySingleView.swift; sourceTree = "<group>"; };
 		53FEF5C3217F2FDC00188E9C /* FlukyProtocol+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyProtocol+Animation.swift"; sourceTree = "<group>"; };
+		53FEF5C8217F502800188E9C /* FlukyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 			children = (
 				536CFAF5217DF875000DDEAA /* FlukyLinearView.swift */,
 				53FEF5C1217F199200188E9C /* FlukySingleView.swift */,
+				53B3E2A0217F692E0084C1FA /* FlukyBoxView.swift */,
+				53FEF5C8217F502800188E9C /* FlukyImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B3E2A1217F692E0084C1FA /* FlukyBoxView.swift in Sources */,
 				536CFB03217E334B000DDEAA /* UIStackView+Add.swift in Sources */,
 				53FEF5C2217F199200188E9C /* FlukySingleView.swift in Sources */,
 				536CFAEA217DF704000DDEAA /* FlukyProtocol.swift in Sources */,
@@ -256,6 +263,7 @@
 				536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */,
 				536CFAFB217DFAF9000DDEAA /* FlukyView+ImageView.swift in Sources */,
 				536CFAED217DF73A000DDEAA /* FlukyType.swift in Sources */,
+				53FEF5C9217F502800188E9C /* FlukyImageView.swift in Sources */,
 				536CFAFF217E32A4000DDEAA /* Anchor.swift in Sources */,
 				536CFAF0217DF79C000DDEAA /* Fluky.swift in Sources */,
 				536CFB05217E352E000DDEAA /* NSObject+Create.swift in Sources */,

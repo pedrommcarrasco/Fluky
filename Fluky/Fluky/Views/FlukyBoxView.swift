@@ -1,19 +1,27 @@
 //
-//  FlukyLinearView.swift
+//  FlukyBoxView.swift
 //  Fluky
 //
-//  Created by Pedro Carrasco on 22/10/2018.
+//  Created by Pedro Carrasco on 23/10/2018.
 //  Copyright © 2018 Pedro Carrasco. All rights reserved.
 //
 
 import UIKit
 
-// MARK: - FlukyLinearView
-final class FlukyLinearView: FlukyView {
+// MARK: - FlukyBoxView
+final class FlukyBoxView: FlukyView {
 
     // MARK: Outlets
     private let imageViews: [FluckyImageView]
     private let containerStackView: UIStackView = .create {
+        $0.axis = .vertical
+        $0.spacing = Spacing.S
+    }
+    private let topStackView: UIStackView = .create {
+        $0.axis = .horizontal
+        $0.spacing = Spacing.S
+    }
+    private let bottomStackView: UIStackView = .create {
         $0.axis = .horizontal
         $0.spacing = Spacing.S
     }
@@ -38,7 +46,7 @@ final class FlukyLinearView: FlukyView {
 }
 
 // MARK: - Configuration
-private extension FlukyLinearView {
+private extension FlukyBoxView {
 
     func configure(size: CGFloat) {
 
@@ -49,7 +57,9 @@ private extension FlukyLinearView {
     func addSubviews() {
 
         addSubviews(containerStackView)
-        containerStackView.addArrangedSubviews(imageViews)
+        containerStackView.addArrangedSubviews(topStackView, bottomStackView)
+        topStackView.addArrangedSubviews(imageViews[0], imageViews[1])
+        bottomStackView.addArrangedSubviews(imageViews[2], imageViews[3])
     }
 
     func defineConstraints(size: CGFloat) {
@@ -65,7 +75,7 @@ private extension FlukyLinearView {
 }
 
 // MARK: - Animation Interface
-extension FlukyLinearView {
+extension FlukyBoxView {
 
     func start() {
 
@@ -84,3 +94,4 @@ extension FlukyLinearView {
         imageViews.forEach { $0.autoRepeat = false }
     }
 }
+

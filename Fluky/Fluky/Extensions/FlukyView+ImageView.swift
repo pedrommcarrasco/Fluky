@@ -11,9 +11,9 @@ import UIKit
 // MARK: - ImageView
 extension FlukyProtocol {
 
-    static func imageView() -> UIImageView {
+    static func imageView() -> FluckyImageView {
 
-        let imageView = UIImageView()
+        let imageView = FluckyImageView()
         imageView.configure()
 
         return imageView

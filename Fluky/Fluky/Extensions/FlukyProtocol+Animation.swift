@@ -8,11 +8,7 @@
 
 import UIKit
 
-extension FlukyProtocol where Self: UIView {
+extension UIImageView {
 
-    static func animate(_ animation: @escaping () -> Void) {
-
-        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: Spring.L, initialSpringVelocity: 0.0,
-                       options: [.repeat, .curveEaseOut, .autoreverse], animations: animation) { _ in }
-    }
+    
 }

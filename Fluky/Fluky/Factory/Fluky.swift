@@ -15,7 +15,7 @@ public struct Fluky {
     public static func view(with type: FlukyType,
                             images: [UIImage],
                             backgroundColor: UIColor,
-                            size: CGFloat = 50.0) -> FlukyView {
+                            size: CGFloat = 30.0) -> FlukyView {
 
         let view: FlukyView
 
@@ -28,7 +28,7 @@ public struct Fluky {
             view = FlukyLinearView(images: images, size: size)
 
         case .box:
-            view = FlukyLinearView(images: images, size: size) // TODO
+            view = FlukyBoxView(images: images, size: size)
         }
 
         view.backgroundColor = backgroundColor

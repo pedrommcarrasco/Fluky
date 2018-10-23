@@ -12,7 +12,7 @@ import UIKit
 final class FlukySingleView: FlukyView {
 
     // MARK: Outlets
-    private let imageView = UIImageView()
+    private let imageView = FluckyImageView()
 
     // MARK: Private Properties
     private let images: [UIImage]
@@ -52,8 +52,6 @@ private extension FlukySingleView {
         imageView.centerYAnchor.constrain(to: centerYAnchor)
         imageView.heightAnchor.constrain(to: size)
         imageView.widthAnchor.constrain(to: imageView.heightAnchor)
-
-        imageView.backgroundColor = .orange
     }
 }
 
@@ -62,10 +60,11 @@ extension FlukySingleView {
 
     func start() {
 
-        imageView.transform = CGAffineTransform(scaleX: 0.001, y: 0.001).rotated(by: CGFloat.pi)
-
-        Static.animate { self.imageView.transform = .identity }
+        imageView.animate(with: images)
     }
 
-    func stop() {}
+    func stop() {
+
+        imageView.autoRepeat = false
+    }
 }
