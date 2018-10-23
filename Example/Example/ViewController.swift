@@ -8,9 +8,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let single = Fluky.view(with: .single, images: images, backgroundColor: .white)
-        let linear = Fluky.view(with: .linear, images: images, backgroundColor: .white)
-        let box = Fluky.view(with: .box, images: images, backgroundColor: .white)
+        let single = Fluky.view(as: .single, with: images)
+        let linear = Fluky.view(as: .linear, with: images)
+        let box = Fluky.view(as: .box, with: images)
 
         let flukyViews = [single, linear, box]
 
