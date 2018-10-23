@@ -39,5 +39,8 @@ class ViewController: UIViewController {
         )
 
         flukyViews.forEach { $0.start() }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10,
+                                      execute: { flukyViews.forEach { $0.stop() } })
     }
 }
