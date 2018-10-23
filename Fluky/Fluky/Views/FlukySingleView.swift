@@ -48,7 +48,9 @@ private extension FlukySingleView {
     }
 
     func defineConstraints(size: CGFloat) {
-
+        
+        imageViews.first?.topAnchor.constrain(.greaterThanOrEqual, to: topAnchor)
+        imageViews.first?.leadingAnchor.constrain(.greaterThanOrEqual, to: leadingAnchor)
         imageViews.first?.centerXAnchor.constrain(to: centerXAnchor)
         imageViews.first?.centerYAnchor.constrain(to: centerYAnchor)
         imageViews.first?.heightAnchor.constrain(to: size)

@@ -65,6 +65,8 @@ private extension FlukyBoxView {
 
     func defineConstraints(size: CGFloat) {
 
+        containerStackView.topAnchor.constrain(.greaterThanOrEqual, to: topAnchor)
+        containerStackView.leadingAnchor.constrain(.greaterThanOrEqual, to: leadingAnchor)
         containerStackView.centerXAnchor.constrain(to: centerXAnchor)
         containerStackView.centerYAnchor.constrain(to: centerYAnchor)
 

@@ -14,25 +14,11 @@ public struct Fluky {
     // MARK: Public Static Functions
     public static func view(with type: FlukyType,
                             images: [UIImage],
-                            backgroundColor: UIColor,
                             size: CGFloat = 30.0) -> FlukyView {
-
-        let view: FlukyView
-
         switch type {
-
-        case .single:
-            view = FlukySingleView(images: images, size: size)
-
-        case .linear:
-            view = FlukyLinearView(images: images, size: size)
-
-        case .box:
-            view = FlukyBoxView(images: images, size: size)
+        case .single: return FlukySingleView(images: images, size: size)
+        case .linear: return FlukyLinearView(images: images, size: size)
+        case .box: return FlukyBoxView(images: images, size: size)
         }
-
-        view.backgroundColor = backgroundColor
-
-        return view
     }
 }

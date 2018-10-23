@@ -53,6 +53,8 @@ private extension FlukyLinearView {
 
         containerStackView.centerXAnchor.constrain(to: centerXAnchor)
         containerStackView.centerYAnchor.constrain(to: centerYAnchor)
+        containerStackView.topAnchor.constrain(.greaterThanOrEqual, to: topAnchor)
+        containerStackView.leadingAnchor.constrain(.greaterThanOrEqual, to: leadingAnchor)
 
         imageViews.forEach {
             $0.heightAnchor.constrain(to: size)
