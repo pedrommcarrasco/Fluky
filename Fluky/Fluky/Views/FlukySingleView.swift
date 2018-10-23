@@ -52,14 +52,20 @@ private extension FlukySingleView {
         imageView.centerYAnchor.constrain(to: centerYAnchor)
         imageView.heightAnchor.constrain(to: size)
         imageView.widthAnchor.constrain(to: imageView.heightAnchor)
+
+        imageView.backgroundColor = .orange
     }
 }
 
 // MARK: - Animation Interface
 extension FlukySingleView {
 
-    func start() {}
+    func start() {
+
+        imageView.transform = CGAffineTransform(scaleX: 0.001, y: 0.001).rotated(by: CGFloat.pi)
+
+        Static.animate { self.imageView.transform = .identity }
+    }
 
     func stop() {}
 }
-

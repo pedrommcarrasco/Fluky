@@ -25,6 +25,7 @@
 		536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB09217E35BE000DDEAA /* Spacing.swift */; };
 		536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB0A217E35BE000DDEAA /* Spring.swift */; };
 		53FEF5C2217F199200188E9C /* FlukySingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C1217F199200188E9C /* FlukySingleView.swift */; };
+		53FEF5C4217F2FDC00188E9C /* FlukyProtocol+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C3217F2FDC00188E9C /* FlukyProtocol+Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		536CFB09217E35BE000DDEAA /* Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		536CFB0A217E35BE000DDEAA /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		53FEF5C1217F199200188E9C /* FlukySingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukySingleView.swift; sourceTree = "<group>"; };
+		53FEF5C3217F2FDC00188E9C /* FlukyProtocol+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyProtocol+Animation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				536CFAFC217DFBE9000DDEAA /* Sequence+Transform.swift */,
 				536CFB00217E3336000DDEAA /* UIView+Add.swift */,
 				536CFB02217E334B000DDEAA /* UIStackView+Add.swift */,
+				53FEF5C3217F2FDC00188E9C /* FlukyProtocol+Animation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */,
 				536CFB0C217E35BE000DDEAA /* Damping.swift in Sources */,
 				536CFAF6217DF875000DDEAA /* FlukyLinearView.swift in Sources */,
+				53FEF5C4217F2FDC00188E9C /* FlukyProtocol+Animation.swift in Sources */,
 				536CFAF3217DF7BA000DDEAA /* FlukyView.swift in Sources */,
 				536CFB0B217E35BE000DDEAA /* Duration.swift in Sources */,
 				536CFAFD217DFBE9000DDEAA /* Sequence+Transform.swift in Sources */,
