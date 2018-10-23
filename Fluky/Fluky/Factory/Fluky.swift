@@ -21,9 +21,11 @@ public struct Fluky {
 
         switch type {
 
+        case .single:
+            view = FlukySingleView(images: images, size: size)
+
         case .linear:
             view = FlukyLinearView(images: images, size: size)
-
 
         case .box:
             view = FlukyLinearView(images: images, size: size) // TODO

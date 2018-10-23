@@ -11,6 +11,7 @@ import Foundation
 // MARK: - FlukyType
 public enum FlukyType {
 
+    case single
     case linear
     case box
 }

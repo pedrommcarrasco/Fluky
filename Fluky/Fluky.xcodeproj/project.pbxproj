@@ -24,6 +24,7 @@
 		536CFB0C217E35BE000DDEAA /* Damping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB08217E35BE000DDEAA /* Damping.swift */; };
 		536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB09217E35BE000DDEAA /* Spacing.swift */; };
 		536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CFB0A217E35BE000DDEAA /* Spring.swift */; };
+		53FEF5C2217F199200188E9C /* FlukySingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C1217F199200188E9C /* FlukySingleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		536CFB08217E35BE000DDEAA /* Damping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Damping.swift; sourceTree = "<group>"; };
 		536CFB09217E35BE000DDEAA /* Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		536CFB0A217E35BE000DDEAA /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		53FEF5C1217F199200188E9C /* FlukySingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukySingleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,17 +80,13 @@
 		536CFADF217DF538000DDEAA /* Fluky */ = {
 			isa = PBXGroup;
 			children = (
-				536CFB06217E35A7000DDEAA /* Style */,
-				536CFB08217E35BE000DDEAA /* Damping.swift */,
-				536CFB07217E35BE000DDEAA /* Duration.swift */,
-				536CFB09217E35BE000DDEAA /* Spacing.swift */,
-				536CFB0A217E35BE000DDEAA /* Spring.swift */,
-				536CFAF7217DF9AA000DDEAA /* Extensions */,
-				536CFAF4217DF869000DDEAA /* Views */,
-				536CFAF1217DF7B1000DDEAA /* Typealias */,
-				536CFAEE217DF792000DDEAA /* Factory */,
 				536CFAEB217DF72E000DDEAA /* Enumerations */,
+				536CFAF7217DF9AA000DDEAA /* Extensions */,
+				536CFAEE217DF792000DDEAA /* Factory */,
 				536CFAE8217DF6E4000DDEAA /* Protocols */,
+				536CFB06217E35A7000DDEAA /* Style */,
+				536CFAF1217DF7B1000DDEAA /* Typealias */,
+				536CFAF4217DF869000DDEAA /* Views */,
 				536CFAE0217DF538000DDEAA /* Fluky.h */,
 				536CFAE1217DF538000DDEAA /* Info.plist */,
 			);
@@ -131,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				536CFAF5217DF875000DDEAA /* FlukyLinearView.swift */,
+				53FEF5C1217F199200188E9C /* FlukySingleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +151,10 @@
 		536CFB06217E35A7000DDEAA /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				536CFB08217E35BE000DDEAA /* Damping.swift */,
+				536CFB07217E35BE000DDEAA /* Duration.swift */,
+				536CFB09217E35BE000DDEAA /* Spacing.swift */,
+				536CFB0A217E35BE000DDEAA /* Spring.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536CFB03217E334B000DDEAA /* UIStackView+Add.swift in Sources */,
+				53FEF5C2217F199200188E9C /* FlukySingleView.swift in Sources */,
 				536CFAEA217DF704000DDEAA /* FlukyProtocol.swift in Sources */,
 				536CFB0D217E35BE000DDEAA /* Spacing.swift in Sources */,
 				536CFB0C217E35BE000DDEAA /* Damping.swift in Sources */,
