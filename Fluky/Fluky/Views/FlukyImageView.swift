@@ -9,11 +9,11 @@
 import Foundation
 
 // MARK: - FluckyImageView
-final class FluckyImageView: UIImageView {
+public final class FluckyImageView: UIImageView {
 
     // MARK: Constant
     private enum Constant {
-        static let lowScale: CGFloat = 0.00001
+        static let lowScale: CGFloat = 0.0000000000001
     }
 
     // MARK: Properties

@@ -11,14 +11,14 @@ import Foundation
 // MARK: - Animate
 extension FlukyProtocol where Self: UIView {
 
-    func animate(_ imageViews: [FluckyImageView], with images: [UIImage]) {
+    func animate() {
 
         imageViews.forEach { imageView in
 
             guard let index = imageViews.index(of: imageView) else { return }
 
             DispatchQueue.main.asyncAfter(deadline: Calculator.delay(for: index),
-                                          execute: { imageView.animate(with:images) })
+                                          execute: { imageView.animate(with: self.images) })
         }
     }
 }

@@ -12,11 +12,11 @@ import UIKit
 final class FlukyLinearView: FlukyView {
 
     // MARK: Outlets
-    private let imageViews: [FluckyImageView]
+    let imageViews: [FluckyImageView]
     private let containerStackView = UIStackView.create()
 
-    // MARK: Private Properties
-    private let images: [UIImage]
+    // MARK: Properties
+    let images: [UIImage]
 
     // MARK: Initializer
     init(images: [UIImage], size: CGFloat) {
@@ -58,19 +58,5 @@ private extension FlukyLinearView {
             $0.heightAnchor.constrain(to: size)
             $0.widthAnchor.constrain(to: $0.heightAnchor)
         }
-    }
-}
-
-// MARK: - Animation Interface
-extension FlukyLinearView {
-
-    func start() {
-
-        animate(imageViews, with: images)
-    }
-
-    func stop() {
-
-        imageViews.forEach { $0.autoRepeat = false }
     }
 }

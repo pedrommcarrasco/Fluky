@@ -12,15 +12,16 @@ import UIKit
 final class FlukySingleView: FlukyView {
 
     // MARK: Outlets
-    private let imageView = FluckyImageView()
+    let imageViews: [FluckyImageView]
 
-    // MARK: Private Properties
-    private let images: [UIImage]
+    // MARK: Properties
+    let images: [UIImage]
 
     // MARK: Initializer
     init(images: [UIImage], size: CGFloat) {
 
         self.images = images
+        self.imageViews = [FluckyImageView()]
 
         super.init(frame: .zero)
 
@@ -43,28 +44,14 @@ private extension FlukySingleView {
 
     func addSubviews() {
 
-        addSubviews(imageView)
+        addSubviews(imageViews)
     }
 
     func defineConstraints(size: CGFloat) {
 
-        imageView.centerXAnchor.constrain(to: centerXAnchor)
-        imageView.centerYAnchor.constrain(to: centerYAnchor)
-        imageView.heightAnchor.constrain(to: size)
-        imageView.widthAnchor.constrain(to: imageView.heightAnchor)
-    }
-}
-
-// MARK: - Animation Interface
-extension FlukySingleView {
-
-    func start() {
-
-        animate([imageView], with: images)
-    }
-
-    func stop() {
-
-        imageView.autoRepeat = false
+        imageViews.first?.centerXAnchor.constrain(to: centerXAnchor)
+        imageViews.first?.centerYAnchor.constrain(to: centerYAnchor)
+        imageViews.first?.heightAnchor.constrain(to: size)
+        imageViews.first?.widthAnchor.constrain(to: size)
     }
 }

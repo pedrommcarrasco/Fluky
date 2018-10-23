@@ -12,7 +12,7 @@ import UIKit
 final class FlukyBoxView: FlukyView {
 
     // MARK: Outlets
-    private let imageViews: [FluckyImageView]
+    let imageViews: [FluckyImageView]
     private let stackViews: [UIStackView]
     private let containerStackView: UIStackView = .create {
         $0.axis = .vertical
@@ -20,10 +20,12 @@ final class FlukyBoxView: FlukyView {
         $0.alignment = .center
         $0.spacing = Spacing.S
     }
-    private let chunkCount: Int
+    
+    // MARK: Properties
+    let images: [UIImage]
 
     // MARK: Private Properties
-    private let images: [UIImage]
+    private let chunkCount: Int
 
     // MARK: Initializer
     init(images: [UIImage], size: CGFloat) {
@@ -70,19 +72,5 @@ private extension FlukyBoxView {
             $0.heightAnchor.constrain(to: size)
             $0.widthAnchor.constrain(to: $0.heightAnchor)
         }
-    }
-}
-
-// MARK: - Animation Interface
-extension FlukyBoxView {
-
-    func start() {
-
-        animate(imageViews, with: images)
-    }
-
-    func stop() {
-
-        imageViews.forEach { $0.autoRepeat = false }
     }
 }

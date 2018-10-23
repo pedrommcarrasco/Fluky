@@ -29,6 +29,7 @@
 		53B3E2A8217F7C770084C1FA /* FlukyImageView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3E2A7217F7C770084C1FA /* FlukyImageView+Create.swift */; };
 		53B3E2AA217F7CC20084C1FA /* UIStackView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3E2A9217F7CC20084C1FA /* UIStackView+Create.swift */; };
 		53B3E2AC217F7FBE0084C1FA /* FlukyProtocol+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3E2AB217F7FBE0084C1FA /* FlukyProtocol+Animate.swift */; };
+		53B3E2AE217F84AC0084C1FA /* FlukyProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3E2AD217F84AC0084C1FA /* FlukyProtocol+Default.swift */; };
 		53FEF5C2217F199200188E9C /* FlukySingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C1217F199200188E9C /* FlukySingleView.swift */; };
 		53FEF5C9217F502800188E9C /* FlukyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FEF5C8217F502800188E9C /* FlukyImageView.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		53B3E2A7217F7C770084C1FA /* FlukyImageView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyImageView+Create.swift"; sourceTree = "<group>"; };
 		53B3E2A9217F7CC20084C1FA /* UIStackView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Create.swift"; sourceTree = "<group>"; };
 		53B3E2AB217F7FBE0084C1FA /* FlukyProtocol+Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyProtocol+Animate.swift"; sourceTree = "<group>"; };
+		53B3E2AD217F84AC0084C1FA /* FlukyProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlukyProtocol+Default.swift"; sourceTree = "<group>"; };
 		53FEF5C1217F199200188E9C /* FlukySingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukySingleView.swift; sourceTree = "<group>"; };
 		53FEF5C8217F502800188E9C /* FlukyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlukyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				53B3E2A7217F7C770084C1FA /* FlukyImageView+Create.swift */,
 				53B3E2A9217F7CC20084C1FA /* UIStackView+Create.swift */,
 				53B3E2AB217F7FBE0084C1FA /* FlukyProtocol+Animate.swift */,
+				53B3E2AD217F84AC0084C1FA /* FlukyProtocol+Default.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				536CFAF9217DF9CC000DDEAA /* UIImageView+Configuration.swift in Sources */,
 				536CFB0E217E35BE000DDEAA /* Spring.swift in Sources */,
 				536CFAED217DF73A000DDEAA /* FlukyType.swift in Sources */,
+				53B3E2AE217F84AC0084C1FA /* FlukyProtocol+Default.swift in Sources */,
 				53FEF5C9217F502800188E9C /* FlukyImageView.swift in Sources */,
 				536CFAFF217E32A4000DDEAA /* Anchor.swift in Sources */,
 				536CFAF0217DF79C000DDEAA /* Fluky.swift in Sources */,

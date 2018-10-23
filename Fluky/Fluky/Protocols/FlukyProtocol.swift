@@ -14,6 +14,10 @@ public protocol FlukyProtocol {
     // MARK: Typealias
     typealias Static = Self
 
+    // MARK: Properties
+    var images: [UIImage] { get }
+    var imageViews: [FluckyImageView] { get }
+
     // MARK: Functions - Animation Interface
     func start()
     func stop()
