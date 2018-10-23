@@ -13,18 +13,14 @@ final class FlukyBoxView: FlukyView {
 
     // MARK: Outlets
     private let imageViews: [FluckyImageView]
+    private let stackViews: [UIStackView]
     private let containerStackView: UIStackView = .create {
         $0.axis = .vertical
+        $0.distribution = .equalCentering
+        $0.alignment = .center
         $0.spacing = Spacing.S
     }
-    private let topStackView: UIStackView = .create {
-        $0.axis = .horizontal
-        $0.spacing = Spacing.S
-    }
-    private let bottomStackView: UIStackView = .create {
-        $0.axis = .horizontal
-        $0.spacing = Spacing.S
-    }
+    private let chunkCount: Int
 
     // MARK: Private Properties
     private let images: [UIImage]
@@ -33,7 +29,9 @@ final class FlukyBoxView: FlukyView {
     init(images: [UIImage], size: CGFloat) {
 
         self.images = images
-        self.imageViews = images.transform(into: { return Static.imageView() })
+        self.chunkCount = Calculator.safeSquare(of: images.count)
+        self.imageViews = images.transform(into: { return FluckyImageView.create() })
+        self.stackViews = (0..<chunkCount).transform(into: { UIStackView.create() })
 
         super.init(frame: .zero)
 
@@ -57,9 +55,10 @@ private extension FlukyBoxView {
     func addSubviews() {
 
         addSubviews(containerStackView)
-        containerStackView.addArrangedSubviews(topStackView, bottomStackView)
-        topStackView.addArrangedSubviews(imageViews[0], imageViews[1])
-        bottomStackView.addArrangedSubviews(imageViews[2], imageViews[3])
+        containerStackView.addArrangedSubviews(stackViews)
+
+        let imageViewsChunk = imageViews.chunk(into: chunkCount)
+        zip(imageViewsChunk, stackViews).forEach { $1.addArrangedSubviews($0) }
     }
 
     func defineConstraints(size: CGFloat) {
@@ -79,14 +78,7 @@ extension FlukyBoxView {
 
     func start() {
 
-        imageViews.forEach { imageView in
-
-            guard let index = imageViews.index(of: imageView) else { return }
-
-            DispatchQueue.main.asyncAfter(deadline: .now() + (0.15 * Double(index)), execute: {
-                imageView.animate(with: self.images)
-            })
-        }
+        animate(imageViews, with: images)
     }
 
     func stop() {
@@ -94,4 +86,3 @@ extension FlukyBoxView {
         imageViews.forEach { $0.autoRepeat = false }
     }
 }
-

@@ -60,7 +60,7 @@ extension FlukySingleView {
 
     func start() {
 
-        imageView.animate(with: images)
+        animate([imageView], with: images)
     }
 
     func stop() {

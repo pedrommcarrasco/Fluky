@@ -13,10 +13,7 @@ final class FlukyLinearView: FlukyView {
 
     // MARK: Outlets
     private let imageViews: [FluckyImageView]
-    private let containerStackView: UIStackView = .create {
-        $0.axis = .horizontal
-        $0.spacing = Spacing.S
-    }
+    private let containerStackView = UIStackView.create()
 
     // MARK: Private Properties
     private let images: [UIImage]
@@ -25,7 +22,7 @@ final class FlukyLinearView: FlukyView {
     init(images: [UIImage], size: CGFloat) {
 
         self.images = images
-        self.imageViews = images.transform(into: { return Static.imageView() })
+        self.imageViews = images.transform(into: { return FluckyImageView.create() })
 
         super.init(frame: .zero)
 
@@ -69,14 +66,7 @@ extension FlukyLinearView {
 
     func start() {
 
-        imageViews.forEach { imageView in
-
-            guard let index = imageViews.index(of: imageView) else { return }
-
-            DispatchQueue.main.asyncAfter(deadline: .now() + (0.15 * Double(index)), execute: {
-                imageView.animate(with: self.images)
-            })
-        }
+        animate(imageViews, with: images)
     }
 
     func stop() {

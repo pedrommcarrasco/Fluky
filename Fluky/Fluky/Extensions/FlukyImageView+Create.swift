@@ -1,17 +1,17 @@
 //
-//  FlukyView+ImageView.swift
+//  FlukyImageView+Create.swift
 //  Fluky
 //
-//  Created by Pedro Carrasco on 22/10/2018.
+//  Created by Pedro Carrasco on 23/10/2018.
 //  Copyright © 2018 Pedro Carrasco. All rights reserved.
 //
 
 import UIKit
 
-// MARK: - ImageView
-extension FlukyProtocol {
+// MARK: - Create
+extension FluckyImageView {
 
-    static func imageView() -> FluckyImageView {
+    static func create() -> FluckyImageView {
 
         let imageView = FluckyImageView()
         imageView.configure()
