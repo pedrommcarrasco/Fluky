@@ -2,8 +2,8 @@
   "name": "Fluky",
   "swift_version": "4.2",
   "version": "1.0.0",
-  "summary": "🎲 Icon based randomized loading",
-  "description": "TODO",
+  "summary": "🎲 Loading based on random icons",
+  "description": "Make every loading screen different with Fluky, your random loading screen inspired by PlayStation.",
   "homepage": "https://github.com/pedrommcarrasco/Fluky",
   "license": {
     "type": "MIT",

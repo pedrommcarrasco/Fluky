@@ -10,7 +10,6 @@ class ViewController: UIViewController {
 
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor(red: 0.10, green: 0.10, blue: 0.14, alpha: 1.0)
-        
 
         let single = Fluky.view(as: .single, with: images)
         let linear = Fluky.view(as: .linear, with: images)
@@ -44,7 +43,6 @@ class ViewController: UIViewController {
 
         flukyViews.forEach { $0.start() }
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10,
-                                      execute: { flukyViews.forEach { $0.stop() } })
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: { flukyViews.forEach { $0.stop() } })
     }
 }
