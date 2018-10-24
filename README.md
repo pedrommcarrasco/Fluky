@@ -1,4 +1,4 @@
-![](https://github.com/pedrommcarrasco/Fluky/blob/MVP/Design/cover.png?raw=true)
+![](https://github.com/pedrommcarrasco/Fluky/blob/master/Design/cover.png?raw=true)
 
 > **Fluky** *(/ˈfluːki/)*, *adjective*
 >
@@ -42,7 +42,7 @@ carthage update
 
 | Single                                                       | Linear                                                       | Box                                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](https://github.com/pedrommcarrasco/Fluky/blob/MVP/Design/single.gif?raw=true) | ![](https://github.com/pedrommcarrasco/Fluky/blob/MVP/Design/linear.gif?raw=true) | ![](https://github.com/pedrommcarrasco/Fluky/blob/MVP/Design/box.gif?raw=true) |
+| ![](https://github.com/pedrommcarrasco/Fluky/blob/master/Design/single.gif?raw=true) | ![](https://github.com/pedrommcarrasco/Fluky/blob/master/Design/linear.gif?raw=true) | ![](https://github.com/pedrommcarrasco/Fluky/blob/master/Design/box.gif?raw=true) |
 
 * ☝️ *This background is not part of Fluky*
 
