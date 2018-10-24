@@ -57,7 +57,7 @@ import Fluky
 Once imported, you can start using Fluky to create randomized icon based loading sceens. Bellow, you'll be able to see a working example. First, we start by creating a `FlukyView`:
 
 ```swift
-let flukyView = Fluky.view(as: .single, with: images) 
+let flukyView = Fluky.view(as: .single, with: images) // images -> array of icons you want to display
 // size has a default parameter of 30.0
 ```
 
