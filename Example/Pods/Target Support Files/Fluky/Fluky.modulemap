@@ -1,0 +1,6 @@
+module Fluky {
+  umbrella header "Fluky-umbrella.h"
+
+  export *
+  module * { export * }
+}

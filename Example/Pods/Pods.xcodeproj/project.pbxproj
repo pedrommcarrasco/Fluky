@@ -6,49 +6,101 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		C7314FEBCC070AD909E8296238212CFA /* Fluky */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A1F37EA270405C4E9698ACE2FBF690EC /* Build configuration list for PBXAggregateTarget "Fluky" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = Fluky;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		7BF9F7A1DDE35F7A51DC4B1F0AC150D4 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7518887CB6082F44EF3AB61E0E3778DA /* Pods-Example-dummy.m */; };
+		245AE20EB290C60E4C665C8558B02E24 /* FlukyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581306AFE89239BB7383680D2442E55A /* FlukyView.swift */; };
+		24C1A3B75D4267AAB9D6FE56E6216020 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25711AFC6E42778C9A48EA4343ECEEC /* Anchor.swift */; };
+		252422110DA79515653CE698EA033453 /* FlukyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1BC7D43B47EE401D5A32E77D34CC90 /* FlukyProtocol.swift */; };
+		3C4EEBFBEFAA02E9D4261744E4663A1A /* Fluky-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04248E40C3A6FB80BA6C8E0E7366E82B /* Fluky-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C86EBE2D41CB54CE9D293E64F59D670 /* Fluky-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D28C1CCB5A7236EFD9191D60192D77 /* Fluky-dummy.m */; };
+		5D30880AE368F5584C6ADE7B5EB1433A /* Fluky.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3BCE5BAAE20A4B867D0C16914FB9 /* Fluky.swift */; };
+		67A6050FB8F875213EEDB5955CC7ED1A /* Damping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E576F3760A5D7FACB2815DAB3D0FC /* Damping.swift */; };
+		6BB8D282279143E2A9A635FCE4DA17C9 /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F487EF66FE64DA53FDFE1CBD699DB /* UIView+Add.swift */; };
+		721F18F5DED2CE5BFACCE258BAD28596 /* FlukyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277A5CF7AB011821344A4ADF316B886E /* FlukyType.swift */; };
+		7D8E883A1B9B093AD520D97B78D999C3 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F633DEA56389DC4ED732ABBD8D8B20 /* Pods-Example-dummy.m */; };
+		7DDF7AFE221DAA04F18876A8AC4E2AE2 /* Fluky.h in Headers */ = {isa = PBXBuildFile; fileRef = D50F6BE52382B60AED3D1941F51D6D56 /* Fluky.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E3320308DE1BFCF7E8520F23CF01514 /* UIStackView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398E7FE57116E5D56CD9DAE255E38396 /* UIStackView+Add.swift */; };
+		9146DD686515CA6AF576FA4EFF22BCED /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F20C9037A5F1A7004BCB5EE6D1F274 /* Duration.swift */; };
+		941C98AC663405C5605646C3C2AD9202 /* FlukyProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E70AB4483499F02163200406D07720 /* FlukyProtocol+Default.swift */; };
+		9860B67D2F3382336CDBF39EFACE1F0D /* Sequence+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6921B8B9DCCF21C4EF5E22ED3E68D8 /* Sequence+Transform.swift */; };
+		9FCF9E8F25DB71F88D648FF1D8DDD023 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC8D3623FD1A7FB9B69EF208D90ECD /* Spring.swift */; };
+		AB431E83D89B158415E211BB4EA30BE1 /* FlukyLinearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C57BA59006594EC51586BBC7475464 /* FlukyLinearView.swift */; };
+		B1B0411698768FF46BA17DBDF4EA6ED9 /* FlukyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB6C5876F6A919F11624C26AF7BA42 /* FlukyBoxView.swift */; };
+		B2240B69739515B877572B27E3BFFFDD /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D42D159A47DC837C70E4D53AB3E9015F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2A2231C75508A88D2D8777E7F7A263F /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE26561A0A037919FD70584F3ED1670 /* Spacing.swift */; };
+		B401EC5A8D5A4D13A2C5922758A6AF0B /* UIStackView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4A067CEEFAA020E332371DE4E681F /* UIStackView+Create.swift */; };
+		B529C2E6128F58E8D6144486B4B68AAC /* FlukyProtocol+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7732E61D8158B122834997568C124 /* FlukyProtocol+Animate.swift */; };
+		B8609C5852A3A04D67BA8171C4EB1529 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447B8C2931AC8E3E5AADCEDD3DCB195 /* Calculator.swift */; };
+		BC3D3D53AE67FF4716E2C4BF1B9A0675 /* FlukyImageView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDBABAEE469CD52889832ACDA6A9BE9 /* FlukyImageView+Create.swift */; };
+		C0840D60BEDE6EAE191FE326AEC935FD /* Array+Chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EECE816412B70461A491D61F917FD /* Array+Chunk.swift */; };
+		D2416BDAE2828E67DEC6AFD6235D3114 /* FlukySingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BB55AE6811A79C7CCCC727F8824557 /* FlukySingleView.swift */; };
+		DEFC4686AFC355E78F8A2C347ADB2E2A /* NSObject+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095ED3CE863DB0371C9D0E2AA396742C /* NSObject+Create.swift */; };
+		F88E6A6BAA6304A286DC5B8B1E2D0266 /* FlukyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD80CD9373B8BE3882259CA676E6E488 /* FlukyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B8D7953681B37D47D4200AB09874BB0 /* PBXContainerItemProxy */ = {
+		E73C931E69747ACB250398212B33F6FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7314FEBCC070AD909E8296238212CFA;
+			remoteGlobalIDString = C9645D226202DB875F4E129B513B23DD;
 			remoteInfo = Fluky;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01288F85F948F32274AB099336D08D95 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		121D14E1BC9C52B37DB3E09D767BEAFA /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		21DB313371E890115EB97214D2D02274 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3F9CA51D062C9C4FF971AD3C75C5EE2C /* Fluky.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Fluky.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E15D590B55F6691EDEDA51338F8097A /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Example.a"; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7518887CB6082F44EF3AB61E0E3778DA /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		8B336C8F16F97D6FCE065A57EDDD18A6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		04239285FD8E362D816F1B1D09001D65 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		04248E40C3A6FB80BA6C8E0E7366E82B /* Fluky-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fluky-umbrella.h"; sourceTree = "<group>"; };
+		095ED3CE863DB0371C9D0E2AA396742C /* NSObject+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+Create.swift"; sourceTree = "<group>"; };
+		09F4A067CEEFAA020E332371DE4E681F /* UIStackView+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStackView+Create.swift"; sourceTree = "<group>"; };
+		1A16F27F1644EC00EFC28978691FD43B /* libFluky.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFluky.a; path = libFluky.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5B3C6E8CBFE54D91C75405759A8134 /* Fluky-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fluky-prefix.pch"; sourceTree = "<group>"; };
+		23E70AB4483499F02163200406D07720 /* FlukyProtocol+Default.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FlukyProtocol+Default.swift"; sourceTree = "<group>"; };
+		277A5CF7AB011821344A4ADF316B886E /* FlukyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukyType.swift; sourceTree = "<group>"; };
+		2B6921B8B9DCCF21C4EF5E22ED3E68D8 /* Sequence+Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Sequence+Transform.swift"; sourceTree = "<group>"; };
+		2E8EC39680E13B51BA98DEFE401A39A3 /* Fluky.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fluky.xcconfig; sourceTree = "<group>"; };
+		34406554533887B21CB2E81C64591C6C /* Fluky.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Fluky.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3447B8C2931AC8E3E5AADCEDD3DCB195 /* Calculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		3934CC4ED3E5E56B4560DA4444C63F20 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		398E7FE57116E5D56CD9DAE255E38396 /* UIStackView+Add.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStackView+Add.swift"; sourceTree = "<group>"; };
+		46A7E7C9112E1617130644A6FF52C693 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4B3E576F3760A5D7FACB2815DAB3D0FC /* Damping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Damping.swift; sourceTree = "<group>"; };
+		581306AFE89239BB7383680D2442E55A /* FlukyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukyView.swift; sourceTree = "<group>"; };
+		5B9F487EF66FE64DA53FDFE1CBD699DB /* UIView+Add.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
+		79DED4CC844EF01462EF409EF357B7AC /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Example.a"; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FEB6C5876F6A919F11624C26AF7BA42 /* FlukyBoxView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukyBoxView.swift; sourceTree = "<group>"; };
+		805EECE816412B70461A491D61F917FD /* Array+Chunk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Chunk.swift"; sourceTree = "<group>"; };
+		80F5D6764D6F0D4D838D6FEA2573494B /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		88A7732E61D8158B122834997568C124 /* FlukyProtocol+Animate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FlukyProtocol+Animate.swift"; sourceTree = "<group>"; };
+		8AE26561A0A037919FD70584F3ED1670 /* Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		8C76EEAC1F286BCF06BCA893938DFAD9 /* Fluky.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Fluky.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B7748FBF9AD162226BD962CA174A0578 /* Fluky.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fluky.xcconfig; sourceTree = "<group>"; };
-		B98D57D5AF263681E1A1428C06E6905C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BB0CE5FD9B79166009CA1CD4F3CD2687 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		E151DCDAA6CD50F5F4214799E8BB60BD /* Fluky.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fluky.h; path = Fluky/Fluky/Fluky.h; sourceTree = "<group>"; };
+		A5F20C9037A5F1A7004BCB5EE6D1F274 /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		AA1F3BCE5BAAE20A4B867D0C16914FB9 /* Fluky.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Fluky.swift; sourceTree = "<group>"; };
+		AD80CD9373B8BE3882259CA676E6E488 /* FlukyImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukyImageView.swift; sourceTree = "<group>"; };
+		AFDBABAEE469CD52889832ACDA6A9BE9 /* FlukyImageView+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FlukyImageView+Create.swift"; sourceTree = "<group>"; };
+		B0C57BA59006594EC51586BBC7475464 /* FlukyLinearView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukyLinearView.swift; sourceTree = "<group>"; };
+		B33ABD984166D937704E99B29A3C5598 /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B344CDEB1378ABEF116D60F71A6BF791 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B8297D52B29A6075BE1936E1D97CE125 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		C6D28C1CCB5A7236EFD9191D60192D77 /* Fluky-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fluky-dummy.m"; sourceTree = "<group>"; };
+		C8EC8D3623FD1A7FB9B69EF208D90ECD /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		D25711AFC6E42778C9A48EA4343ECEEC /* Anchor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
+		D42D159A47DC837C70E4D53AB3E9015F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		D50F6BE52382B60AED3D1941F51D6D56 /* Fluky.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fluky.h; path = Fluky/Fluky/Fluky.h; sourceTree = "<group>"; };
+		DA1BC7D43B47EE401D5A32E77D34CC90 /* FlukyProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukyProtocol.swift; sourceTree = "<group>"; };
+		E9BB55AE6811A79C7CCCC727F8824557 /* FlukySingleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlukySingleView.swift; sourceTree = "<group>"; };
+		F8F633DEA56389DC4ED732ABBD8D8B20 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7951DA235DD73F45869B4EE54C52E4D3 /* Frameworks */ = {
+		4476DEEB6F09A35EB6D2D73F628B4C90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		969490391610A3F4E46F225087A1E5D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,14 +110,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C73F8241CAAED80B4FD821317B12A0E /* Pod */ = {
+		01A5AD84D75B0220D24BC106DD2D88D9 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3F9CA51D062C9C4FF971AD3C75C5EE2C /* Fluky.podspec */,
-				21DB313371E890115EB97214D2D02274 /* LICENSE */,
-				8B336C8F16F97D6FCE065A57EDDD18A6 /* README.md */,
+				34406554533887B21CB2E81C64591C6C /* Fluky.podspec */,
+				B344CDEB1378ABEF116D60F71A6BF791 /* LICENSE */,
+				46A7E7C9112E1617130644A6FF52C693 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		037AE159A43E5E631B2F86CE2D6B9366 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				B8297D52B29A6075BE1936E1D97CE125 /* Pods-Example.modulemap */,
+				B33ABD984166D937704E99B29A3C5598 /* Pods-Example-acknowledgements.markdown */,
+				80F5D6764D6F0D4D838D6FEA2573494B /* Pods-Example-acknowledgements.plist */,
+				F8F633DEA56389DC4ED732ABBD8D8B20 /* Pods-Example-dummy.m */,
+				D42D159A47DC837C70E4D53AB3E9015F /* Pods-Example-umbrella.h */,
+				04239285FD8E362D816F1B1D09001D65 /* Pods-Example.debug.xcconfig */,
+				3934CC4ED3E5E56B4560DA4444C63F20 /* Pods-Example.release.xcconfig */,
+			);
+			name = "Pods-Example";
+			path = "Target Support Files/Pods-Example";
 			sourceTree = "<group>";
 		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
@@ -75,103 +142,218 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3697E701FFC75419B7D07FF8E6D524DB /* Development Pods */ = {
+		1C3C6146DF61C0B4EEF952630E8A2B04 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				FDE82B8E3310335CCA4602A6431E85FE /* Fluky */,
+				AA1F3BCE5BAAE20A4B867D0C16914FB9 /* Fluky.swift */,
+			);
+			name = Factory;
+			path = Fluky/Fluky/Factory;
+			sourceTree = "<group>";
+		};
+		1E64C73D0178674BE1A54E719994909F /* Fluky */ = {
+			isa = PBXGroup;
+			children = (
+				D50F6BE52382B60AED3D1941F51D6D56 /* Fluky.h */,
+				C652D71669E9CC9AA94940BEB46F09D6 /* Enumerations */,
+				991E1BB9C89D030D32C503E0B88A047F /* Extensions */,
+				1C3C6146DF61C0B4EEF952630E8A2B04 /* Factory */,
+				B24B104D9A2A2D7AB3EF773B37895B54 /* Helpers */,
+				01A5AD84D75B0220D24BC106DD2D88D9 /* Pod */,
+				9F618A09F815967384BD86AC2A0780F2 /* Protocols */,
+				F7C1608C783ECA8227344AD184A7580B /* Style */,
+				97E814402219F58F6E65F87A9AA007E4 /* Support Files */,
+				215DF5001B81D81EB8EA5FBD526C0E71 /* Typealias */,
+				782AA9815BA32C76F4AA3A52EBF4294E /* Views */,
+			);
+			name = Fluky;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		215DF5001B81D81EB8EA5FBD526C0E71 /* Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				581306AFE89239BB7383680D2442E55A /* FlukyView.swift */,
+			);
+			name = Typealias;
+			path = Fluky/Fluky/Typealias;
+			sourceTree = "<group>";
+		};
+		22ADDEF15FD0FF32C917FE609FE447A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A16F27F1644EC00EFC28978691FD43B /* libFluky.a */,
+				79DED4CC844EF01462EF409EF357B7AC /* libPods-Example.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B69FECA52872BB26923C9ADE2DED9A5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E64C73D0178674BE1A54E719994909F /* Fluky */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		38F17E60CA2E2D3110A39851515E1FBE /* Pods-Example */ = {
+		6C49482DA5D4F97709CE2787E2211CE4 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				121D14E1BC9C52B37DB3E09D767BEAFA /* Pods-Example-acknowledgements.markdown */,
-				01288F85F948F32274AB099336D08D95 /* Pods-Example-acknowledgements.plist */,
-				7518887CB6082F44EF3AB61E0E3778DA /* Pods-Example-dummy.m */,
-				B98D57D5AF263681E1A1428C06E6905C /* Pods-Example.debug.xcconfig */,
-				BB0CE5FD9B79166009CA1CD4F3CD2687 /* Pods-Example.release.xcconfig */,
+				037AE159A43E5E631B2F86CE2D6B9366 /* Pods-Example */,
 			);
-			name = "Pods-Example";
-			path = "Target Support Files/Pods-Example";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		782AA9815BA32C76F4AA3A52EBF4294E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FEB6C5876F6A919F11624C26AF7BA42 /* FlukyBoxView.swift */,
+				AD80CD9373B8BE3882259CA676E6E488 /* FlukyImageView.swift */,
+				B0C57BA59006594EC51586BBC7475464 /* FlukyLinearView.swift */,
+				E9BB55AE6811A79C7CCCC727F8824557 /* FlukySingleView.swift */,
+			);
+			name = Views;
+			path = Fluky/Fluky/Views;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3697E701FFC75419B7D07FF8E6D524DB /* Development Pods */,
+				6B69FECA52872BB26923C9ADE2DED9A5 /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				E9FF6C77EF6D53C41253D64223421BB1 /* Products */,
-				B4654D0BF71CD5FA0DF9B50C8A26107A /* Targets Support Files */,
+				22ADDEF15FD0FF32C917FE609FE447A5 /* Products */,
+				6C49482DA5D4F97709CE2787E2211CE4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B4654D0BF71CD5FA0DF9B50C8A26107A /* Targets Support Files */ = {
+		97E814402219F58F6E65F87A9AA007E4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				38F17E60CA2E2D3110A39851515E1FBE /* Pods-Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DC631693F7C742199B0B8BF0D17CBC37 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B7748FBF9AD162226BD962CA174A0578 /* Fluky.xcconfig */,
+				8C76EEAC1F286BCF06BCA893938DFAD9 /* Fluky.modulemap */,
+				2E8EC39680E13B51BA98DEFE401A39A3 /* Fluky.xcconfig */,
+				C6D28C1CCB5A7236EFD9191D60192D77 /* Fluky-dummy.m */,
+				1B5B3C6E8CBFE54D91C75405759A8134 /* Fluky-prefix.pch */,
+				04248E40C3A6FB80BA6C8E0E7366E82B /* Fluky-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Fluky";
 			sourceTree = "<group>";
 		};
-		E9FF6C77EF6D53C41253D64223421BB1 /* Products */ = {
+		991E1BB9C89D030D32C503E0B88A047F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5E15D590B55F6691EDEDA51338F8097A /* libPods-Example.a */,
+				D25711AFC6E42778C9A48EA4343ECEEC /* Anchor.swift */,
+				805EECE816412B70461A491D61F917FD /* Array+Chunk.swift */,
+				AFDBABAEE469CD52889832ACDA6A9BE9 /* FlukyImageView+Create.swift */,
+				88A7732E61D8158B122834997568C124 /* FlukyProtocol+Animate.swift */,
+				23E70AB4483499F02163200406D07720 /* FlukyProtocol+Default.swift */,
+				095ED3CE863DB0371C9D0E2AA396742C /* NSObject+Create.swift */,
+				2B6921B8B9DCCF21C4EF5E22ED3E68D8 /* Sequence+Transform.swift */,
+				398E7FE57116E5D56CD9DAE255E38396 /* UIStackView+Add.swift */,
+				09F4A067CEEFAA020E332371DE4E681F /* UIStackView+Create.swift */,
+				5B9F487EF66FE64DA53FDFE1CBD699DB /* UIView+Add.swift */,
 			);
-			name = Products;
+			name = Extensions;
+			path = Fluky/Fluky/Extensions;
 			sourceTree = "<group>";
 		};
-		FDE82B8E3310335CCA4602A6431E85FE /* Fluky */ = {
+		9F618A09F815967384BD86AC2A0780F2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E151DCDAA6CD50F5F4214799E8BB60BD /* Fluky.h */,
-				0C73F8241CAAED80B4FD821317B12A0E /* Pod */,
-				DC631693F7C742199B0B8BF0D17CBC37 /* Support Files */,
+				DA1BC7D43B47EE401D5A32E77D34CC90 /* FlukyProtocol.swift */,
 			);
-			name = Fluky;
-			path = ../..;
+			name = Protocols;
+			path = Fluky/Fluky/Protocols;
+			sourceTree = "<group>";
+		};
+		B24B104D9A2A2D7AB3EF773B37895B54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3447B8C2931AC8E3E5AADCEDD3DCB195 /* Calculator.swift */,
+			);
+			name = Helpers;
+			path = Fluky/Fluky/Helpers;
+			sourceTree = "<group>";
+		};
+		C652D71669E9CC9AA94940BEB46F09D6 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				277A5CF7AB011821344A4ADF316B886E /* FlukyType.swift */,
+			);
+			name = Enumerations;
+			path = Fluky/Fluky/Enumerations;
+			sourceTree = "<group>";
+		};
+		F7C1608C783ECA8227344AD184A7580B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E576F3760A5D7FACB2815DAB3D0FC /* Damping.swift */,
+				A5F20C9037A5F1A7004BCB5EE6D1F274 /* Duration.swift */,
+				8AE26561A0A037919FD70584F3ED1670 /* Spacing.swift */,
+				C8EC8D3623FD1A7FB9B69EF208D90ECD /* Spring.swift */,
+			);
+			name = Style;
+			path = Fluky/Fluky/Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		75D340D0DE82B7935B0EA1504DB3E5AF /* Headers */ = {
+		76BA2378AD26E60EC61694D60F8F37C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2240B69739515B877572B27E3BFFFDD /* Pods-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B83433401E4753D4DE6C12020DA87F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C4EEBFBEFAA02E9D4261744E4663A1A /* Fluky-umbrella.h in Headers */,
+				7DDF7AFE221DAA04F18876A8AC4E2AE2 /* Fluky.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		27CFEFDDA7D252BFA14808D391FFD404 /* Pods-Example */ = {
+		C9645D226202DB875F4E129B513B23DD /* Fluky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BDBA7F93E52E8859FFF1B200596389C /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildConfigurationList = 291E36940D9C0B6912A009D9D30880CC /* Build configuration list for PBXNativeTarget "Fluky" */;
 			buildPhases = (
-				75D340D0DE82B7935B0EA1504DB3E5AF /* Headers */,
-				5EF689537792F5F3D9F4465D76D2EA85 /* Sources */,
-				7951DA235DD73F45869B4EE54C52E4D3 /* Frameworks */,
+				E1B83433401E4753D4DE6C12020DA87F /* Headers */,
+				25A7D2EFAF3890BCB9CC8C7FCABBA9FB /* Sources */,
+				4476DEEB6F09A35EB6D2D73F628B4C90 /* Frameworks */,
+				EBF116A7C3EEA1403ABE3F5BB3501520 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6016F76F1A177F653DA5BB4FE2ABA624 /* PBXTargetDependency */,
+			);
+			name = Fluky;
+			productName = Fluky;
+			productReference = 1A16F27F1644EC00EFC28978691FD43B /* libFluky.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F03C85E8D36FFFB1BD52F983BB34DF75 /* Pods-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76611F1FA1FC35E6D20DDEF6843C01E3 /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildPhases = (
+				76BA2378AD26E60EC61694D60F8F37C4 /* Headers */,
+				E3CA0295D4CE51B3332B91CA565B29B7 /* Sources */,
+				969490391610A3F4E46F225087A1E5D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6DED7EBC32203B1B5F332668E72FF2A /* PBXTargetDependency */,
 			);
 			name = "Pods-Example";
 			productName = "Pods-Example";
-			productReference = 5E15D590B55F6691EDEDA51338F8097A /* libPods-Example.a */;
+			productReference = 79DED4CC844EF01462EF409EF357B7AC /* libPods-Example.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -191,97 +373,153 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E9FF6C77EF6D53C41253D64223421BB1 /* Products */;
+			productRefGroup = 22ADDEF15FD0FF32C917FE609FE447A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C7314FEBCC070AD909E8296238212CFA /* Fluky */,
-				27CFEFDDA7D252BFA14808D391FFD404 /* Pods-Example */,
+				C9645D226202DB875F4E129B513B23DD /* Fluky */,
+				F03C85E8D36FFFB1BD52F983BB34DF75 /* Pods-Example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EBF116A7C3EEA1403ABE3F5BB3501520 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Fluky/Fluky.modulemap",
+				"${PODS_ROOT}/Headers/Public/Fluky/Fluky-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Fluky-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Fluky/Fluky.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Fluky/Fluky-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		5EF689537792F5F3D9F4465D76D2EA85 /* Sources */ = {
+		25A7D2EFAF3890BCB9CC8C7FCABBA9FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BF9F7A1DDE35F7A51DC4B1F0AC150D4 /* Pods-Example-dummy.m in Sources */,
+				24C1A3B75D4267AAB9D6FE56E6216020 /* Anchor.swift in Sources */,
+				C0840D60BEDE6EAE191FE326AEC935FD /* Array+Chunk.swift in Sources */,
+				B8609C5852A3A04D67BA8171C4EB1529 /* Calculator.swift in Sources */,
+				67A6050FB8F875213EEDB5955CC7ED1A /* Damping.swift in Sources */,
+				9146DD686515CA6AF576FA4EFF22BCED /* Duration.swift in Sources */,
+				5C86EBE2D41CB54CE9D293E64F59D670 /* Fluky-dummy.m in Sources */,
+				5D30880AE368F5584C6ADE7B5EB1433A /* Fluky.swift in Sources */,
+				B1B0411698768FF46BA17DBDF4EA6ED9 /* FlukyBoxView.swift in Sources */,
+				BC3D3D53AE67FF4716E2C4BF1B9A0675 /* FlukyImageView+Create.swift in Sources */,
+				F88E6A6BAA6304A286DC5B8B1E2D0266 /* FlukyImageView.swift in Sources */,
+				AB431E83D89B158415E211BB4EA30BE1 /* FlukyLinearView.swift in Sources */,
+				B529C2E6128F58E8D6144486B4B68AAC /* FlukyProtocol+Animate.swift in Sources */,
+				941C98AC663405C5605646C3C2AD9202 /* FlukyProtocol+Default.swift in Sources */,
+				252422110DA79515653CE698EA033453 /* FlukyProtocol.swift in Sources */,
+				D2416BDAE2828E67DEC6AFD6235D3114 /* FlukySingleView.swift in Sources */,
+				721F18F5DED2CE5BFACCE258BAD28596 /* FlukyType.swift in Sources */,
+				245AE20EB290C60E4C665C8558B02E24 /* FlukyView.swift in Sources */,
+				DEFC4686AFC355E78F8A2C347ADB2E2A /* NSObject+Create.swift in Sources */,
+				9860B67D2F3382336CDBF39EFACE1F0D /* Sequence+Transform.swift in Sources */,
+				B2A2231C75508A88D2D8777E7F7A263F /* Spacing.swift in Sources */,
+				9FCF9E8F25DB71F88D648FF1D8DDD023 /* Spring.swift in Sources */,
+				8E3320308DE1BFCF7E8520F23CF01514 /* UIStackView+Add.swift in Sources */,
+				B401EC5A8D5A4D13A2C5922758A6AF0B /* UIStackView+Create.swift in Sources */,
+				6BB8D282279143E2A9A635FCE4DA17C9 /* UIView+Add.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3CA0295D4CE51B3332B91CA565B29B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8E883A1B9B093AD520D97B78D999C3 /* Pods-Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6016F76F1A177F653DA5BB4FE2ABA624 /* PBXTargetDependency */ = {
+		A6DED7EBC32203B1B5F332668E72FF2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Fluky;
-			target = C7314FEBCC070AD909E8296238212CFA /* Fluky */;
-			targetProxy = 4B8D7953681B37D47D4200AB09874BB0 /* PBXContainerItemProxy */;
+			target = C9645D226202DB875F4E129B513B23DD /* Fluky */;
+			targetProxy = E73C931E69747ACB250398212B33F6FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		10EAA55278824FDDB12D5380D76C09CD /* Debug */ = {
+		4AD36337B694D9C71101134B1146F602 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B98D57D5AF263681E1A1428C06E6905C /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = 3934CC4ED3E5E56B4560DA4444C63F20 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		11D57F4EBF5F46D641DF345F1C38B53F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB0CE5FD9B79166009CA1CD4F3CD2687 /* Pods-Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		3DBD70E60BCEC8E41B2534B44879AAE8 /* Debug */ = {
+		5660F8B818E5FCF62819FA3A19204966 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7748FBF9AD162226BD962CA174A0578 /* Fluky.xcconfig */;
+			baseConfigurationReference = 2E8EC39680E13B51BA98DEFE401A39A3 /* Fluky.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Fluky/Fluky-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				MODULEMAP_FILE = Headers/Public/Fluky/Fluky.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Fluky;
+				PRODUCT_NAME = Fluky;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		60DAF49CA7A9F362148D49C3C3123B2A /* Debug */ = {
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -334,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -345,7 +583,33 @@
 			};
 			name = Debug;
 		};
-		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
+		B16112C2E553A0CAA1F07C765415BFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04239285FD8E362D816F1B1D09001D65 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,31 +668,41 @@
 			};
 			name = Release;
 		};
-		C7826F30C8CBBC08B6110E1D80D39E0F /* Release */ = {
+		E2165B3DF704A36E96294341C1490B5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7748FBF9AD162226BD962CA174A0578 /* Fluky.xcconfig */;
+			baseConfigurationReference = 2E8EC39680E13B51BA98DEFE401A39A3 /* Fluky.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Fluky/Fluky-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				MODULEMAP_FILE = Headers/Public/Fluky/Fluky.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Fluky;
+				PRODUCT_NAME = Fluky;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BDBA7F93E52E8859FFF1B200596389C /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+		291E36940D9C0B6912A009D9D30880CC /* Build configuration list for PBXNativeTarget "Fluky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				10EAA55278824FDDB12D5380D76C09CD /* Debug */,
-				11D57F4EBF5F46D641DF345F1C38B53F /* Release */,
+				E2165B3DF704A36E96294341C1490B5D /* Debug */,
+				5660F8B818E5FCF62819FA3A19204966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -436,17 +710,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				60DAF49CA7A9F362148D49C3C3123B2A /* Debug */,
-				C4EAA84F44D044E108500A81C635F21E /* Release */,
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1F37EA270405C4E9698ACE2FBF690EC /* Build configuration list for PBXAggregateTarget "Fluky" */ = {
+		76611F1FA1FC35E6D20DDEF6843C01E3 /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DBD70E60BCEC8E41B2534B44879AAE8 /* Debug */,
-				C7826F30C8CBBC08B6110E1D80D39E0F /* Release */,
+				B16112C2E553A0CAA1F07C765415BFB7 /* Debug */,
+				4AD36337B694D9C71101134B1146F602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

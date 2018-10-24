@@ -2,9 +2,9 @@ Pod::Spec.new do |s|
   s.swift_version = "4.2"
   s.name         = "Fluky"
   s.version      = "1.0.0"
-  s.summary      = "🎲 Icon based randomized loading"
+  s.summary      = "🎲 Loading based on random icons"
 
-  s.description  = "TODO"
+  s.description  = "Make every loading screen different with Fluky, your random loading screen inspired by PlayStation."
 
   s.homepage     = "https://github.com/pedrommcarrasco/Fluky"
   s.license = { :type => 'MIT', :file => 'LICENSE' }
