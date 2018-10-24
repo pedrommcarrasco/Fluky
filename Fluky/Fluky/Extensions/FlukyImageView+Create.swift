@@ -14,7 +14,7 @@ extension FluckyImageView {
     static func create() -> FluckyImageView {
 
         let imageView = FluckyImageView()
-        imageView.configure()
+        imageView.contentMode = .scaleAspectFit
 
         return imageView
     }

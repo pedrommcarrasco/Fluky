@@ -45,7 +45,8 @@ extension FluckyImageView {
                            options: [.curveEaseIn],
                            animations: {
 
-                            self.transform = CGAffineTransform(scaleX: Constant.lowScale, y: Constant.lowScale).rotated(by: CGFloat.pi)
+                            self.transform = CGAffineTransform(scaleX: Constant.lowScale, y: Constant.lowScale)
+                                .rotated(by: CGFloat.pi)
             }) { _ in
 
                 if self.autoRepeat {

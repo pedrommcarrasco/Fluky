@@ -8,6 +8,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.navigationBar.isHidden = true
+        view.backgroundColor = UIColor(red: 0.10, green: 0.10, blue: 0.14, alpha: 1.0)
+        
+
         let single = Fluky.view(as: .single, with: images)
         let linear = Fluky.view(as: .linear, with: images)
         let box = Fluky.view(as: .box, with: images)
