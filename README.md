@@ -6,15 +6,37 @@
 
 Make every loading screen different with Fluky, your random loading screen inspired by PlayStation.
 
+[![CocoaPods](https://img.shields.io/cocoapods/v/Fluky.svg)](https://cocoapods.org/pods/Fluky)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![apm](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/pedrommcarrasco/Fluky/blob/master/LICENSE)
+
 ## Instalation 📦
 
 ### Cocoapods
 
-🚧 Work in Progress 🚧
+Fluky is available through [CocoaPods](https://cocoapods.org/pods/Fluky). To do so, add the following line to your PodFile:
+
+```swift
+pod 'Fluky'
+```
+And then run the following command in terminal:
+
+```swift
+pod install
+```
 
 ### Carthage
+Add this to your Cartfile:
 
-🚧 Work in Progress 🚧
+```swift
+github "pedrommcarrasco/Fluky"
+```
+
+And then run the following command in terminal:
+
+```swift
+carthage update
+```
 
 ##  Styles 💅
 
