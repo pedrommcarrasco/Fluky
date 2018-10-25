@@ -85,4 +85,4 @@ Feel free to contribute to this project by proving [ideas](https://github.com/pe
 
 ## License ⛔
 
-Constrictor's available under the MIT license. See the [LICENSE](https://github.com/pedrommcarrasco/Fluky/blob/master/LICENSE) file for more information.
+Fluky's available under the MIT license. See the [LICENSE](https://github.com/pedrommcarrasco/Fluky/blob/master/LICENSE) file for more information.
