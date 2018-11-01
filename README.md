@@ -81,7 +81,7 @@ There's a sample project in this repository called [Example](https://github.com/
 
 ## Contributing  🙌 
 
-Feel free to contribute to this project by proving [ideas](https://github.com/pedrommcarrasco/Fluky/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) or open a [pull request](https://github.com/pedrommcarrasco/Fluky/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
+Feel free to contribute to this project by providing [ideas](https://github.com/pedrommcarrasco/Fluky/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) or opening [pull requests](https://github.com/pedrommcarrasco/Fluky/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc).
 
 ## License ⛔
 
