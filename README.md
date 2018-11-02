@@ -10,7 +10,7 @@ Make every loading screen different with Fluky, your random loading screen inspi
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![apm](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/pedrommcarrasco/Fluky/blob/master/LICENSE)
 
-## Instalation 📦
+## Installation 📦
 
 ### Cocoapods
 
