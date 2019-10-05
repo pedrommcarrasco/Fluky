@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.1
 
 import PackageDescription
 
@@ -19,7 +19,6 @@ let package = Package(
             path: "Fluky/Fluky"),
     ],
     swiftLanguageVersions: [
-        .v4_2,
         .v5
     ]
 )
