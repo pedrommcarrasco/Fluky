@@ -6,6 +6,8 @@
 //  Copyright © 2018 Pedro Carrasco. All rights reserved.
 //
 
+import UIKit
+
 @objc extension NSLayoutAnchor {
     
     @discardableResult

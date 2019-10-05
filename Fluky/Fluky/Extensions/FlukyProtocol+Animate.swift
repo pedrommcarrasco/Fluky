@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pedro Carrasco. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Animate
 extension FlukyProtocol where Self: UIView {
