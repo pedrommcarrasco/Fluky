@@ -25,5 +25,9 @@ let package = Package(
             name: "Fluky",
             dependencies: [],
             path: "Fluky/Fluky"),
+    ],
+    swiftLanguageVersions: [
+        .v4_2,
+        .v5
     ]
 )
