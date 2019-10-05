@@ -15,7 +15,7 @@ extension FlukyProtocol where Self: UIView {
 
         imageViews.forEach { imageView in
 
-            guard let index = imageViews.index(of: imageView) else { return }
+            guard let index = imageViews.firstIndex(of: imageView) else { return }
 
             DispatchQueue.main.asyncAfter(deadline: Calculator.delay(for: index),
                                           execute: { imageView.animate(with: self.images) })

@@ -28,6 +28,8 @@ import UIKit
             
         case .lessThanOrEqual:
             constraint = self.constraint(lessThanOrEqualTo: anchor, constant: constant)
+        @unknown default:
+            fatalError("Case not implemented")
         }
         
         constraint.set(priority: priority, isActive: isActive)
@@ -55,6 +57,8 @@ extension NSLayoutDimension {
             
         case .lessThanOrEqual:
             constraint = self.constraint(lessThanOrEqualToConstant: constant)
+        @unknown default:
+            fatalError("Case not implemented")
         }
         
         constraint.set(priority: priority, isActive: isActive)
@@ -81,6 +85,8 @@ extension NSLayoutDimension {
             
         case .lessThanOrEqual:
             constraint = self.constraint(lessThanOrEqualTo: anchor, multiplier: multiplier, constant: constant)
+        @unknown default:
+            fatalError("Case not implemented")
         }
         
         constraint.set(priority: priority, isActive: isActive)
