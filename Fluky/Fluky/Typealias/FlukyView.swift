@@ -6,6 +6,6 @@
 //  Copyright © 2018 Pedro Carrasco. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public typealias FlukyView = (FlukyProtocol & UIView)

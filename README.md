@@ -38,6 +38,9 @@ And then run the following command in terminal:
 carthage update
 ```
 
+### Swift Package Manager
+In  your app target click `+` in `Frameworks, Libraries, and Embedded Content`, then `Add Other...`, `Add Package Dependency...`, put repository url `https://github.com/pedrommcarrasco/Fluky.git`
+
 ##  Styles 💅
 
 | Single                                                       | Linear                                                       | Box                                                          |
